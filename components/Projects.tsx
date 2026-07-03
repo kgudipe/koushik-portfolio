@@ -11,8 +11,8 @@ const sideProjects = [
     title: "AI resume analyzer",
     desc: "Upload a resume and job description — get instant match scoring, gap analysis, and rewrite suggestions via Claude API.",
     stack: ["React", "FastAPI", "Claude API", "Python"],
-    live: "#",
-    github: "#",
+    live: null,
+    github: "https://github.com/kgudipe/ai-resume-analyzer.git",
   },
   {
     icon: "📊",
@@ -24,8 +24,8 @@ const sideProjects = [
     title: "Project management platform",
     desc: "Full-stack app with Gantt charts, dashboards, Cognito auth, and Prisma ORM deployed on AWS EC2 and RDS.",
     stack: ["Next.js", "TypeScript", "Node.js", "AWS"],
-    live: "#",
-    github: "#",
+    live: null,
+    github: "https://github.com/kgudipe/ProjectManagement-App.git",
   },
   {
     icon: "🧠",
