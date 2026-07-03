@@ -1,8 +1,10 @@
+import CountUp from "@/components/ui/CountUp";
+
 const stats = [
-  { num: "2", suffix: "M", desc: "transactions / day" },
-  { num: "4", suffix: "+", desc: "years experience" },
-  { num: "30", suffix: "%", desc: "deployment cycle cut" },
-  { num: "15", suffix: "%", desc: "earlier fraud detection" },
+  { num: 2,  suffix: "M", desc: "transactions / day" },
+  { num: 4,  suffix: "+", desc: "years experience" },
+  { num: 30, suffix: "%", desc: "deployment cycle cut" },
+  { num: 15, suffix: "%", desc: "earlier fraud detection" },
 ];
 
 export default function Stats() {
@@ -18,7 +20,12 @@ export default function Stats() {
           style={{ borderRight: i < 3 ? "0.5px solid rgba(255,255,255,0.05)" : "none" }}
         >
           <div className="font-grotesk text-[30px] font-bold text-gray-50 tracking-tight leading-none">
-            {s.num}
+            <CountUp
+              from={0}
+              to={s.num}
+              duration={2}
+              className="text-gray-50"
+            />
             <em className="not-italic text-indigo-400">{s.suffix}</em>
           </div>
           <div className="font-inter text-[11px] text-gray-600 mt-1">{s.desc}</div>

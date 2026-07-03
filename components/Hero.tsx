@@ -1,4 +1,5 @@
 import PipelineAnimation from "./PipelineAnimation";
+import BlurText from "@/components/ui/BlurText";
 
 const tags = ["Python", "FastAPI", "Apache Kafka", "Spark", "Next.js", "Kubernetes", "AWS · Azure"];
 
@@ -15,9 +16,19 @@ export default function Hero() {
           Open to roles · CA, USA · Remote ok
         </div>
 
-        <h1 className="font-grotesk text-[46px] font-bold text-gray-50 tracking-[-1.8px] leading-[1.05] mb-2">
-          Koushik<br />
-          <span className="text-indigo-400">Gudipelly</span>
+        <h1 className="font-grotesk text-[46px] font-bold tracking-[-1.8px] leading-[1.05] mb-2">
+          <BlurText
+            text="Koushik"
+            delay={80}
+            animateBy="letters"
+            className="text-gray-50"
+          />
+          <BlurText
+            text="Gudipelly"
+            delay={160}
+            animateBy="letters"
+            className="text-indigo-400"
+          />
         </h1>
 
         <p className="font-inter text-[15px] text-gray-600 leading-relaxed mb-5">
