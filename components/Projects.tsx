@@ -11,9 +11,9 @@ const sideProjects = [
     tagBorder: "rgba(139,92,246,0.25)",
     tagColor: "#A78BFA",
     title: "AI resume analyzer",
-    desc: "Upload a resume and job description — get instant match scoring, gap analysis, and rewrite suggestions via Claude API.",
-    stack: ["React", "FastAPI", "Claude API", "Python"],
-    live: null,
+    desc: "Upload a resume and job description — get instant match scoring, gap analysis, and rewrite suggestions via Gemini API.",
+    stack: ["React", "FastAPI", "Gemini API", "Python"],
+    live: "https://ai-resume-analyzer-six-mauve.vercel.app",
     github: "https://github.com/kgudipe/ai-resume-analyzer.git",
   },
   {
@@ -26,7 +26,7 @@ const sideProjects = [
     title: "Project management platform",
     desc: "Full-stack app with Gantt charts, dashboards, Cognito auth, and Prisma ORM deployed on AWS EC2 and RDS.",
     stack: ["Next.js", "TypeScript", "Node.js", "AWS"],
-    live: null,
+    live: "https://project-management-app-mocha-six.vercel.app",
     github: "https://github.com/kgudipe/ProjectManagement-App.git",
   },
   {
