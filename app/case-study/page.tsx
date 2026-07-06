@@ -340,7 +340,7 @@ export default function CaseStudy() {
             <div className="font-grotesk text-[17px] font-bold text-gray-50 mb-1">Want to talk through the architecture?</div>
             <div className="font-inter text-[13px] text-gray-600">Open to backend, fullstack, and ML roles. Based in CA.</div>
           </div>
-          <a href="mailto:youremail@gmail.com"
+          <a href="mailto:gudipellykoushik@gmail.com"
             className="font-inter text-[13px] font-semibold px-6 py-3 rounded-xl bg-indigo-500 text-white no-underline hover:bg-indigo-400 transition-colors whitespace-nowrap">
             Get in touch →
           </a>
@@ -350,7 +350,7 @@ export default function CaseStudy() {
 
       <footer className="relative z-10 flex justify-between px-7 py-4 font-inter text-[11px] text-gray-800 mt-8"
         style={{ borderTop: "0.5px solid rgba(255,255,255,0.04)" }}>
-        <span>kg.dev · placeholder</span>
+        <span>© 2026 Koushik Gudipelly</span>
         <Link href="/" className="text-gray-700 no-underline hover:text-gray-500 transition-colors">← Back to portfolio</Link>
       </footer>
     </main>

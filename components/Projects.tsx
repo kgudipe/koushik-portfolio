@@ -40,7 +40,7 @@ const sideProjects = [
     desc: "CNN (VGG16) trained on large-scale image datasets — classifying 7 emotions in real time with ~95% validation accuracy.",
     stack: ["Python", "TensorFlow", "OpenCV", "VGG16"],
     live: null,
-    github: "#",
+    github: null,
   },
 ];
 
@@ -198,13 +198,17 @@ export default function Projects() {
                     Live demo
                   </a>
                 )}
-                <a
-                  href={p.github}
-                  className="font-inter text-[11px] font-medium px-2.5 py-1.5 rounded-md text-gray-600 no-underline"
-                  style={{ background: "rgba(255,255,255,0.04)", border: "0.5px solid rgba(255,255,255,0.08)" }}
-                >
-                  GitHub
-                </a>
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-inter text-[11px] font-medium px-2.5 py-1.5 rounded-md text-gray-600 no-underline"
+                    style={{ background: "rgba(255,255,255,0.04)", border: "0.5px solid rgba(255,255,255,0.08)" }}
+                  >
+                    GitHub
+                  </a>
+                )}
               </div>
             </div>
           </ScrollReveal>

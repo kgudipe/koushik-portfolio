@@ -20,7 +20,7 @@ export default function Home() {
         className="relative z-10 flex justify-between px-7 py-4 font-inter text-[11px] text-gray-800"
         style={{ borderTop: "0.5px solid rgba(255,255,255,0.04)" }}
       >
-        <span>kg.dev · placeholder</span>
+        <span>© 2026 Koushik Gudipelly</span>
         <span>Built with Next.js · Tailwind · Deployed on Vercel</span>
       </footer>
     </main>

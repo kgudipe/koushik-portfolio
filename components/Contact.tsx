@@ -15,7 +15,7 @@ export default function Contact() {
           Let&apos;s build something.
         </h2>
         <p className="font-inter text-[13px] text-gray-600 max-w-xs leading-relaxed">
-          Open to backend, fullstack, and ML-adjacent roles. Based in CA — open to full time,remote and hybrid.
+          Open to backend, fullstack, and ML-adjacent roles. Based in CA — open to full time, remote and hybrid.
         </p>
         <div className="flex gap-2 mt-4">
           {links.map((l) => (
