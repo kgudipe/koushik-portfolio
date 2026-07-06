@@ -3,6 +3,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ??
+      (process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000"),
+  ),
   title: "Koushik Gudipelly — Backend & Fullstack Engineer",
   description:
     "Backend, fullstack, and ML engineer with 4+ years building high-throughput systems at Bank of America and Deloitte. Specialised in FastAPI, Kafka, Spark, and Next.js.",
@@ -22,6 +28,12 @@ export const metadata: Metadata = {
     description:
       "Building systems that process millions of events daily. Open to backend, fullstack, and ML roles.",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Koushik Gudipelly — Backend & Fullstack Engineer",
+    description:
+      "Building systems that process millions of events daily. Open to backend, fullstack, and ML roles.",
   },
 };
 
