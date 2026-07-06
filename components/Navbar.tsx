@@ -23,7 +23,7 @@ export default function Navbar() {
       </div>
 
       <ul className="flex gap-6 list-none">
-        {["Work", "Systems", "About"].map((item) => (
+        {["Experience", "Work", "Systems", "About"].map((item) => (
           <li key={item}>
             <a
               href={`#${item.toLowerCase()}`}
