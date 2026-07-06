@@ -1,43 +1,19 @@
 const deep = [
   {
     cat: "Backend and APIs",
-    skills: [
-      { name: "FastAPI / Python",   pct: 95 },
-      { name: "Microservices",      pct: 90 },
-      { name: "Spring Boot",        pct: 75 },
-      { name: "GraphQL / REST",     pct: 80 },
-      { name: "Async programming",  pct: 85 },
-    ],
+    skills: ["FastAPI / Python", "Microservices", "Spring Boot", "GraphQL / REST", "Async programming"],
   },
   {
     cat: "Data and streaming",
-    skills: [
-      { name: "Apache Kafka",       pct: 92 },
-      { name: "Spark / PySpark",    pct: 88 },
-      { name: "PostgreSQL / MySQL", pct: 85 },
-      { name: "Redis / Snowflake",  pct: 78 },
-      { name: "ETL pipelines",      pct: 82 },
-    ],
+    skills: ["Apache Kafka", "Spark / PySpark", "PostgreSQL / MySQL", "Redis / Snowflake", "ETL pipelines"],
   },
   {
     cat: "Cloud and DevOps",
-    skills: [
-      { name: "Docker / Kubernetes",   pct: 88 },
-      { name: "Azure AKS",             pct: 82 },
-      { name: "AWS (EC2/S3/RDS)",      pct: 80 },
-      { name: "Jenkins / GitLab CI",   pct: 85 },
-      { name: "Prometheus / Grafana",  pct: 78 },
-    ],
+    skills: ["Docker / Kubernetes", "Azure AKS", "AWS (EC2/S3/RDS)", "Jenkins / GitLab CI", "Prometheus / Grafana"],
   },
   {
     cat: "ML and analytics",
-    skills: [
-      { name: "XGBoost / Scikit-learn", pct: 85 },
-      { name: "TensorFlow / CNNs",      pct: 75 },
-      { name: "Feature engineering",    pct: 88 },
-      { name: "Pandas / NumPy",         pct: 90 },
-      { name: "Anomaly detection",      pct: 80 },
-    ],
+    skills: ["XGBoost / Scikit-learn", "TensorFlow / CNNs", "Feature engineering", "Pandas / NumPy", "Anomaly detection"],
   },
 ];
 
@@ -85,26 +61,20 @@ export default function Skills() {
               border: "0.5px solid rgba(255,255,255,0.07)",
             }}
           >
-            <div className="font-inter text-[10px] uppercase tracking-widest text-indigo-500 mb-3">
+            <div className="font-inter text-[10px] uppercase tracking-widest text-indigo-500 mb-3.5">
               {c.cat}
             </div>
-            {c.skills.map((s, i) => (
-              <div key={s.name} className="flex items-center justify-between mb-2.5">
-                <span className="font-inter text-[12px] text-gray-400">{s.name}</span>
-                <div
-                  className="w-[60px] h-[3px] rounded-full overflow-hidden"
-                  style={{ background: "rgba(255,255,255,0.05)" }}
+            <div className="flex flex-wrap gap-1.5">
+              {c.skills.map((s) => (
+                <span
+                  key={s}
+                  className="font-inter text-[11px] text-indigo-200 px-2.5 py-1 rounded-md"
+                  style={{ background: "rgba(99,102,241,0.1)", border: "0.5px solid rgba(99,102,241,0.22)" }}
                 >
-                  <div
-                    className="h-full rounded-full bg-indigo-500 animate-bar-in"
-                    style={{
-                      width: `${s.pct}%`,
-                      animationDelay: `${i * 0.1}s`,
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
+                  {s}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>

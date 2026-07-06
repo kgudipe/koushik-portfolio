@@ -3,6 +3,7 @@ import Orbs from "@/components/Orbs";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <Experience />
+      <Education />
       <Projects />
       <Skills />
       <Contact />
