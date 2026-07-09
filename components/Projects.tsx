@@ -4,6 +4,19 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const sideProjects = [
   {
+    icon: "🚦",
+    iconBg: "rgba(245,158,11,0.1)",
+    tag: "Backend · Infra",
+    tagBg: "rgba(245,158,11,0.08)",
+    tagBorder: "rgba(245,158,11,0.22)",
+    tagColor: "#FBBF24",
+    title: "Distributed rate limiter / API gateway",
+    desc: "FastAPI gateway enforcing distributed rate limits with Redis Lua scripting, fail-open/fail-closed modes, Prometheus observability, and Docker Compose deployment.",
+    stack: ["Python", "FastAPI", "Redis", "Docker", "Prometheus"],
+    live: null,
+    github: "https://github.com/kgudipe/Distributed-Rate-Limiter-API-Gateway.git",
+  },
+  {
     icon: "🔍",
     iconBg: "rgba(139,92,246,0.12)",
     tag: "AI · Fullstack",
@@ -28,19 +41,6 @@ const sideProjects = [
     stack: ["Next.js", "TypeScript", "Node.js", "AWS"],
     live: "https://project-management-app-mocha-six.vercel.app",
     github: "https://github.com/kgudipe/ProjectManagement-App.git",
-  },
-  {
-    icon: "🧠",
-    iconBg: "rgba(245,158,11,0.1)",
-    tag: "ML · CV",
-    tagBg: "rgba(245,158,11,0.08)",
-    tagBorder: "rgba(245,158,11,0.22)",
-    tagColor: "#FBBF24",
-    title: "Real-time emotion detection",
-    desc: "CNN (VGG16) trained on large-scale image datasets — classifying 7 emotions in real time with ~95% validation accuracy.",
-    stack: ["Python", "TensorFlow", "OpenCV", "VGG16"],
-    live: null,
-    github: null,
   },
 ];
 
