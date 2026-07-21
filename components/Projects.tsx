@@ -10,7 +10,7 @@ const sideProjects = [
     tagBg: "rgba(245,158,11,0.08)",
     tagBorder: "rgba(245,158,11,0.22)",
     tagColor: "#FBBF24",
-    title: "Distributed rate limiter / API gateway",
+    title: "Distributed rate limiter",
     desc: "FastAPI gateway enforcing distributed rate limits with Redis Lua scripting, fail-open/fail-closed modes, Prometheus observability, and Docker Compose deployment.",
     stack: ["Python", "FastAPI", "Redis", "Docker", "Prometheus"],
     live: null,

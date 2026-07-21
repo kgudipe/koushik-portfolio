@@ -13,7 +13,7 @@ export default function Hero() {
           style={{ background: "rgba(99,102,241,0.1)", border: "0.5px solid rgba(99,102,241,0.3)" }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-blink" />
-          Open to roles · CA, USA · Remote ok
+          Open to roles · Remote ok
         </div>
 
         <h1 className="font-grotesk text-[46px] font-bold tracking-[-1.8px] leading-[1.05] mb-2">

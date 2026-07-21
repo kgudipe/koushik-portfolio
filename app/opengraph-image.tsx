@@ -23,7 +23,7 @@ export default function Image() {
         <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 30 }}>
           <div style={{ width: 13, height: 13, borderRadius: 999, background: "#34D399" }} />
           <div style={{ fontSize: 24, color: "#A5B4FC", letterSpacing: 1 }}>
-            Open to roles · CA, USA · Remote ok
+            Open to roles · Remote ok
           </div>
         </div>
 
